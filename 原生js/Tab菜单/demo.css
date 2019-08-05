@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 450px;
+    height: 250px;
+    background-color: aquamarine;
+}
+.tab{
+   list-style-type: none;
+   text-align: center;
+   height: 35px;
+   width: 450px;
+   background-color: #ccc;
+}
+.tab li {
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    margin-left: 4.8em;
+}
+.tab li:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.bj{
+    background-color: aliceblue;
+}
+.box{
+    width: 450px;
+    height: 250px;
+}
+.content{
+    width: 450px;
+    height: 250px;
+    display: none;
+}
+.show{
+    display: block;
+}

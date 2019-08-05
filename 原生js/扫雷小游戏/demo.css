@@ -1,104 +1,38 @@
 *{
     margin: 0;
     padding: 0;
-    list-style-type: none;
 }
-/* 外边最大的框 */
+/* 最外面的包装 */
 .wrapper{
-    width: 100%;
-    height:  1000px;
-    background-image: url(img/bg.jpg);
-    background-size: 100% 100%;
     position: fixed;
+    width: 100%;
+    height:1000px;
+    background: url(img/bg.jpg);
+    background-size: 100% 100%;
 }
 /* 开始按钮 */
-.starBtn{
-    width: 179px;
-    height: 140px;
-    background-image: url(img/startGame.png);
-    background-size: 100% 100%;
-     position: absolute;
-     left: 50px;
-     cursor: pointer;
- }
- /* 提示文字 */
-.promptText{
-    width: 150px;
+.startGameBtn{
     position: absolute;
-    top: 80px;
-    left: 50%;
-    margin-left: -75px;
+    top: 20px;
+    left: 100px;
+    width: 175px;
+    height: 120px;
+    background: url(img/startGame.png);
+    background-size: 100% 100%;
+}
+.tagText{
+    width: 175px;
+    height: 25px;
+    margin:  auto;
     font-weight: bolder;
-    display: none;
+    font-size: 25px;
 }
-/* 扫雷区 */
-.box{
-    width: 500px;
-    height: 500px;
-    transform: perspective(800px) rotateX(45deg);
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    margin: 20px auto;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-    display: none;
-}
-
-/* 雷区小块 */
-.grid{
-    width:49px;
-    height: 49px;
-    background-image: url(img/cao.jpg);
-    background-size: 100% 100%;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    box-shadow: 0 0 4px #333 inset;
-    float: left;
-}
-.show{
-    width:49px;
-    height: 49px;
-    background-image: url(img/dilei.jpg);
-  
-}
-.sign{
-    width:49px;
-    height: 49px;
-    background-image: url(img/hongqi.jpg);
-}
-.num{
-    width:49px;
-    height: 49px;
-   background: #ecd0a1;
-   font-size: 18px;
-   font-weight: bold;
-   line-height: 49px;
-   text-align: center;
-}
-.boxcpm{
-    position:absolute;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-    background:rgba(0, 0, 0, 0.3);
-    display: none;
-}
-.cpm{
-    width: 450px;
-    height: 300px;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    margin-left: -225px;
-    border-radius: 10px;
-    /* background: url(img/over.jpg) no-repeat; */
-    background-size: 100% 100%;
-}
-.close{
-    position: absolute;
-    top: 3px;
-    right: 3px;
-    width:30px;
-    height:30px;
-    background:url(img/closeBtn.png) no-repeat;
+/* 棋盘 */
+.chessboard{
+  width:500px;
+  height: 500px;
+  transform: perspective(800px) rotateX(45deg);
+  margin: 20px auto;
+  background: url(img/cao.jpg);
+  background-size: 100% 100%;
 }
